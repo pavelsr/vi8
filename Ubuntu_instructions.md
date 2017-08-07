@@ -61,6 +61,8 @@ After that you need to copy over a 32Bit GRUB over to the memory stick. [Downloa
 
 The last step is to change some grub settings, so [download this file](https://raw.githubusercontent.com/Manouchehri/vi8/master/Ubuntu_support_files/grub.cfg?raw=true) and overwrite /boot/grub/grub.cfg
 
+Also you need to rename `/casper/vmlinuz` to `/casper/vmlinuz.efi`
+
 ### Booting into live
 Use the USB OTG hub and connect at least a keyboard and the USB stick you just prepared. Shut down the tablet if its powered on and start it again by holding down the lock button for a while and press the `Esc` key on the keyboard to enter the UEFI menu. Use the mouse, touchscreen or keyboard to select the Boot Manager, then use the keyboard to select your USB stick. If you can’t see the USB stick, the 32Bit GRUB binary is either damaged or not correctly placed on the USB stick.
 
